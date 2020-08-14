@@ -4,8 +4,10 @@ Returns: an integer
 '''
 def single_number(arr):
     # Your code here
-
-    pass
+    x = arr[0]
+    for i in range(1, len(arr)):
+        x = x ^ arr[i]
+    return x
 
 
 if __name__ == '__main__':
